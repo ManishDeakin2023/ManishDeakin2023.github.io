@@ -1,0 +1,308 @@
+/* CSS Reset (optional) */
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+/* Basic Styling */
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #eee6e6;
+    color: #ffffff;
+    padding: 1rem 0;background-color: rgba(131, 131, 131, 0.4);
+    height: 55px;
+    position: absolute;
+    z-index: 9;
+    width: 99%;
+    top: 0;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1450px;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 4rem 0;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fcfcfc;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section Styles */
+.features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    margin-bottom: 2rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Call-to-Action Section Styles */
+.call-to-action {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.call-to-action h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.container .about,
+.container hr{
+    font-weight:400;
+  max-width:500px;
+  width:100%;
+  text-align:center;
+  margin:0px auto;
+}
+
+.container .about h3{
+  font-weight:1000;
+  color:#ffffff;
+  font-size:24px;
+}
+
+.container .about p{
+    font-weight:400;
+  font-size:15px;
+  color:#ffffff;
+  margin:10px 0px;
+}
+
+
+.container hr{
+  margin:20px auto;
+  border:none;
+  border-top:1px solid #ccc;
+}
+
+.container .menu{
+    font-weight:400;
+  display:flex;
+  text-align:center;
+  gap:20px;
+}
+
+.container .menu .menu-item {
+    font-weight:400;
+   padding:20px;
+}
+
+.container .menu .menu-item > *{
+    font-weight:400;
+  margin-bottom:20px;
+}
+
+.container .menu .menu-item h4{
+  font-weight:1000;
+  color:#000000;
+  
+}
+
+.container .menu .menu-item i{
+  color:#32a59c;
+  font-size:25px;
+}
+
+.container .menu .menu-item p{
+    font-weight:400;
+  font-size:14px;
+  color:#ffffff;
+}
+
+.container .menu .menu-item .btn{
+  background:none;
+  padding:8px;
+  border:1px solid #ccc;
+  color:#ff0000;
+  cursor:pointer;
+}
+
+.container .about-us{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:20px;
+}
+
+.container .about-us .menu-item{
+  padding:20px;
+}
+
+.container .about-us .menu-item.details{
+  text-align:center;  
+}
+
+.container .about-us .menu-item h5{
+  font-size:18px;
+  font-weight:400;
+  margin-bottom:20px;
+}
+
+.container .about-us .menu-item.details h5{
+  color:#32a59c;
+  font-size:20px;
+}
+
+.container .about-us .menu-item p{
+  color:#555;
+  font-size:14px;
+}
+
+.container .about-us .latest-post .list p{
+  border-bottom:1px solid #ddd;
+  padding:8px 0px;
+}
+
+.container .about-us .stay-in-touch > div{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    nav {
+        padding: 0 1rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.4rem 1.2rem;
+    }
+
+    .features {
+        padding: 3rem 1rem;
+    }
+
+    .features h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature h3 {
+        font-size: 1.2rem;
+    }
+
+    .call-to-action {
+        padding: 3rem 0;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.8rem;
+    }
+
+    .call-to-action p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.4rem 1.2rem;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+.background-section {
+    background-image: url('b.png'); /* Replace 'background.jpg' with your image file's path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Add other background properties as needed */
+}
